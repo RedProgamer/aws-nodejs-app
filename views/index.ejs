@@ -1,0 +1,13 @@
+<%- include('./common/header') -%>
+
+<h1>
+    <%= dayState %>
+</h1>
+
+<form action="/result" method="POST">
+    <label for="username">Input : </label>
+    <input id="username" name="username" autocomplete="off" required/>
+    <button type="submit" name="submit">Submit</button>
+</form>
+
+<%- include('./common/footer') -%>
